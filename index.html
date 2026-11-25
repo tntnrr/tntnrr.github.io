@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- >>> À MODIFIER : le titre qui s'affiche dans l'onglet du navigateur -->
+<title>PRÉNOM NOM · CV en ligne</title>
+
+<style>
+  /* Ne touchez pas à cette partie (la mise en forme). Seule la couleur se choisit plus bas, dans <body>. */
+  body { margin:0; font-family:Arial, Helvetica, sans-serif; color:#1f2937; background:#f5f6f8; line-height:1.6; }
+  body.bleu   { --couleur:#2a5bd7; }
+  body.vert   { --couleur:#1f8a5b; }
+  body.rouge  { --couleur:#c8363c; }
+  body.violet { --couleur:#7b43c8; }
+  nav { background:#ffffff; border-bottom:1px solid #d9dde3; padding:14px 20px; display:flex; gap:20px; flex-wrap:wrap; justify-content:center; }
+  nav a { color:#1f2937; text-decoration:none; font-weight:bold; }
+  nav a:hover { color:var(--couleur); }
+  header { background:var(--couleur); color:#ffffff; text-align:center; padding:64px 20px; }
+  header h1 { margin:0 0 8px; font-size:2.4rem; }
+  header p { margin:0 auto; max-width:600px; font-size:1.15rem; }
+  .bouton { display:inline-block; margin-top:20px; background:#ffffff; color:var(--couleur); padding:12px 24px; border-radius:8px; text-decoration:none; font-weight:bold; }
+  section { max-width:820px; margin:0 auto; padding:40px 20px; }
+  h2 { color:var(--couleur); border-bottom:3px solid var(--couleur); padding-bottom:6px; display:inline-block; }
+  .carte { background:#ffffff; border:1px solid #d9dde3; border-radius:10px; padding:16px 20px; margin-bottom:14px; }
+  .carte h3 { margin:0 0 4px; }
+  .carte .date { color:#6b7280; font-size:.9rem; }
+  .carte p { margin:6px 0 0; }
+  .etiquettes { display:flex; flex-wrap:wrap; gap:10px; padding:0; list-style:none; }
+  .etiquettes li { background:var(--couleur); color:#ffffff; padding:6px 14px; border-radius:999px; }
+  footer { text-align:center; color:#6b7280; padding:30px 20px; font-size:.9rem; }
+</style>
+</head>
+
+<!-- >>> À MODIFIER : choisissez votre couleur en remplaçant "bleu" par  vert, rouge ou violet -->
+<body class="violet">
+
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#apropos">À propos</a>
+  <a href="#formation">Formation</a>
+  <a href="#competences">Compétences</a>
+  <a href="#projets">Projets</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+<!-- ============ ACCUEIL ============ -->
+<header id="accueil">
+  <!-- >>> À MODIFIER : votre prénom et votre nom -->
+  <h1>THIERY TOM</h1>
+  <!-- >>> À MODIFIER : une phrase pour vous présenter -->
+  <p>Étudiant en BTS CIEL, option informatique et réseaux, au lycée Louis Armand.</p>
+  <a class="bouton" href="#contact">Me contacter</a>
+</header>
+
+
+<!-- ============ À PROPOS ============ -->
+<section id="apropos">
+  <h2>À propos</h2>
+  <!-- >>> À MODIFIER : 2 ou 3 phrases sur vous : ce que vous aimez, ce que vous cherchez (stage, alternance, poursuite d'études) -->
+  <p>Je suis passionné par l'informatique et les réseaux.<p>
+  <p>J'aime programmer et realiser de petit projet pour mettre en application mes connaissances.<p> 
+  <p>Je cherche un stage pour mettre en pratique ce que j'apprends en cours.</p>
+</section>
+
+
+<!-- ============ FORMATION ============ -->
+<section id="formation">
+  <h2>Formation</h2>
+
+  <!-- >>> À MODIFIER : votre formation actuelle (laissez ce bloc) -->
+  <div class="carte">
+    <h3>BTS CIEL, option Informatique et Réseaux</h3>
+    <div class="date">2026 – 2027 · Lycée Louis Armand</div>
+    <p>Cybersécurité, informatique et réseaux, électronique.</p>
+  </div>
+
+  <!-- >>> À MODIFIER : votre bac (année, série ou spécialités). Pour ajouter une formation, copiez un bloc <div class="carte"> ... </div> en entier. -->
+  <div class="carte">
+    <h3>Baccalauréat</h3>
+    <div class="date">2025 - 2026 · Lycee Theodore DECK</div>
+    <p>General options: Maths / Physique-Chimie / NSI</p>
+  </div>
+</section>
+
+
+<!-- ============ EXPÉRIENCES (à supprimer si vous n'en avez pas) ============ -->
+<!-- DÉBUT : pour supprimer cette section, effacez tout de la ligne "DÉBUT" à la ligne "FIN" -->
+<section id="experiences">
+  <h2>Expériences</h2>
+  <div class="carte">
+    <h3>Employe polyvalent de restauration</h3>
+    <div class="date">Fraipertuis City · Aout 2026</div>
+    <p>realisation de taches liees a mon environnement</p>
+  </div>
+  
+  <div class="carte">
+    <h3>Agent de fabrication</h3>
+    <div class="date">LDLC · fevrier 2024</div>
+    <p>Montage et assistance de produits informatiques</p>
+  </div>
+</section>
+<!-- FIN -->
+
+
+<!-- ============ COMPÉTENCES ============ -->
+<section id="competences">
+  <h2>Compétences</h2>
+  <!-- >>> À MODIFIER : une compétence par ligne <li>...</li>. Ajoutez ou supprimez des lignes. -->
+  <ul class="etiquettes">
+    <li>Réseaux</li>
+    <li>Phyton</li>
+    <li>HTML et CSS</li>
+    <li>SQL</li>
+    <li>Travail en équipe</li>
+  </ul>
+</section>
+
+
+<!-- ============ PROJETS ============ -->
+<section id="projets">
+  <h2>Projets</h2>
+  <!-- >>> À MODIFIER : un projet de cours ou personnel. Copiez le bloc pour en ajouter un autre. -->
+  <div class="carte">
+    <h3>Mon CV en ligne</h3>
+    <p>Création et publication de mon site sur GitHub Pages.</p>
+  </div>
+  <div class="carte">
+    <h3>Jeu roblox</h3>
+    <p>J'ai cree un jeu roblox via Luau , l'editeur roblox studio et Vibestarter</p>
+  </div>
+</section>
+
+
+<!-- ============ CENTRES D'INTÉRÊT (à supprimer si vous voulez) ============ -->
+<section id="interets">
+  <h2>Centres d'intérêt</h2>
+  <!-- >>> À MODIFIER : vos loisirs, séparés par des virgules -->
+  <p>Programmation , jeux videos , guitare electrique , musique , crypto et trading , JoJo's Bizzare adventure.</p>
+</section>
+
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <h2>Contact</h2>
+  <!-- >>> À MODIFIER : une adresse e-mail dédiée. Ne mettez PAS votre adresse postale ni votre numéro de téléphone : ce site est public. -->
+  <p>E-mail : <a href="mailto:Tomthiery09@gmail.com">Tomthiery09@gmail.com</a></p>
+  <!-- >>> FACULTATIF : votre profil LinkedIn. Supprimez la ligne si vous n'en avez pas. -->
+  <p>LinkedIn : <a href="https://www.linkedin.com/in/tom-t-473b29443/">https://www.linkedin.com/in/tom-t-473b29443/</a></p>
+</section>
+
+
+<footer>
+  <!-- >>> À MODIFIER : votre nom -->
+  © 2026 THIERY TOM · BTS CIEL, lycée Louis Armand
+</footer>
+
+</body>
+</html>
